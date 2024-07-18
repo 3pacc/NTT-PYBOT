@@ -18,15 +18,8 @@ The workflow involves the following steps:
 6. **Response Generation:** Generate responses using a language model based on retrieved passages.
 7. **User Interaction:** Provide an interface for users to interact with the system.
 
-## Getting Started
 
-### Prerequisites
-
-- Comfortable with Python programming.
-- Basic understanding of machine learning and deep learning concepts.
-- Familiarity with PyTorch.
-
-### Setup
+## Setup
 
 **Clone the Repository:**
 
