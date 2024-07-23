@@ -21,7 +21,6 @@ The workflow involves the following steps:
 
 ## Setup
 
-
 **Clone the Repository:**
 
 ```bash
