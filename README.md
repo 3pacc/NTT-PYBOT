@@ -1,5 +1,6 @@
 # NTTRAG-CHATBOT - RAG Pipeline Documentation
-![Texte alternatif](img/workflow.png)
+![Texte alternatif](img/workflow.png) 
+
 
 
 ## Overview
