@@ -1,8 +1,6 @@
 # NTTRAG-CHATBOT - RAG Pipeline Documentation
 ![Texte alternatif](img/workflow.png) 
 
-
-
 ## Overview
 
 This documentation outlines the setup and implementation of a Retrieval-Augmented Generation (RAG) pipeline. The RAG pipeline is designed to process and retrieve information from a large collection of documents, utilizing embeddings for efficient search and retrieval, and leveraging a language model to generate contextually relevant responses.
