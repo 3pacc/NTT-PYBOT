@@ -1,4 +1,4 @@
-# NTTRAG-CHATBOT
+# NTTRAG-CHATBOT-APP
 
 ## Description
 
