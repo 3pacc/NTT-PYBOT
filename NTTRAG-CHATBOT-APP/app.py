@@ -41,7 +41,9 @@ def get_vectorstore(text_chunks):
 
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI()
-    # llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta", model_kwargs={"temperature":0.5, "max_length":512, "return_full_text":False})
+    # llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta", model_kwargs={"temperature":0.5, "max_length":512, "return_full_text":False}) # aternative model for small text generation but doesn't match our model  
+    #llm = HuggingFaceHub(repo_id="google/gemma-7b-it", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False}) # A large model that needs robust GPU's : >=24GB
+    #llm = HuggingFaceHub(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False}) # aternative model for small text generation but doesn't match our model  
 
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
