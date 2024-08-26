@@ -6,7 +6,7 @@ Welcome to **PYBOT**!  An advanced Python-based conversational AI chatbot design
 
 ## Table of Contents 📑
 
-- [Features](#features ✨)
+- [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,7 +17,7 @@ Welcome to **PYBOT**!  An advanced Python-based conversational AI chatbot design
 - [Lightning AI Integration](#lightning-ai-integration)
 - [License](#license)
 
-## Features ✨
+## Features
 
 - **PDF Processing**: Seamlessly extract and analyze text from PDF documents. 
 - **Text Chunking**: Break down large texts into manageable chunks for efficient processing. 
@@ -27,7 +27,7 @@ Welcome to **PYBOT**!  An advanced Python-based conversational AI chatbot design
 - **Customizable NLP Models**: Easily switch between different language models for varied use cases. 
 - **Python Development Focus**: Pre-trained on Python development documents, making it ideal for assisting with Python code-related queries. 
 
-## Prerequisites 🛠️
+## Prerequisites
 
 Before running this application, ensure that you have the following installed:
 
@@ -35,7 +35,7 @@ Before running this application, ensure that you have the following installed:
 - pip (Python package installer) 
 - Virtual environment tools (optional but recommended) 🛡
 
-## Installation 🖥️
+## Installation
 
 1. **Clone the Repository**:
    ```bash
@@ -64,7 +64,7 @@ Before running this application, ensure that you have the following installed:
 5. **Prepare Your PDF Documents**:
    - Place your PDF files in the `ressources` folder. 📂
 
-## Usage 🚀
+## Usage
 
 1. **Run the Application**:
    ```bash
@@ -75,7 +75,7 @@ Before running this application, ensure that you have the following installed:
    - Use the web interface to upload PDF documents and ask questions. 
    - Navigate through different sections using the sidebar. 
 
-## File Structure 🗂️
+## File Structure
 
 ```plaintext
 pybot-chatbot/
@@ -88,16 +88,16 @@ pybot-chatbot/
 └── htmlTemplates.py      # HTML/CSS templates for chat UI 🎨
 ```
 
-## Technical Overview ⚙️
+## Technical Overview 
 
-### Core Components 🧩
+### Core Components
 
 - **Streamlit**: Provides the interactive web interface for the chatbot. 
 - **Langchain**: Manages text processing, vector embeddings, and language model interactions.
 - **FAISS**: Enables fast and efficient similarity search on the text chunks. 
 - **PyPDF2**: Handles PDF file reading and text extraction. 
 
-### Workflow 🔄
+### Workflow
 
 1. **PDF Text Extraction**: Extracts text from PDF files using PyPDF2. 
 2. **Text Chunking**: Breaks the text into smaller chunks for better retrieval and processing. 
@@ -105,7 +105,7 @@ pybot-chatbot/
 4. **RAG-Based Interaction**: Retrieves relevant text chunks and generates responses using the selected NLP model. 
 5. **Conversation Handling**: Maintains context across multiple user queries with memory management. 
 
-## Concept of RAG 🧠🔍
+## Concept of RAG
 
 **Retrieval-Augmented Generation (RAG)** combines two powerful NLP techniques:
 
@@ -114,24 +114,24 @@ pybot-chatbot/
 
 This hybrid approach ensures that the chatbot can provide precise, well-informed answers even when handling complex queries. 
 
-## Customization 🎛️
+## Customization
 
 - **Switching NLP Models**: Modify the `get_conversation_chain` function to use different Hugging Face models as per your requirements. 🔄
 - **Text Chunking Parameters**: Adjust the `chunk_size` and `chunk_overlap` parameters in the `get_text_chunks` function to fine-tune the text segmentation. 
 - **UI Customization**: Update the `htmlTemplates.py` file to change the look and feel of the chatbot interface. 
 
-## Lightning AI Integration ⚡
+## Lightning AI Integration
 
 If you do not have the necessary local resources, such as powerful GPUs or are concerned about the compatibility of various modules, you can deploy this application on **Lightning AI**. Lightning AI provides a robust platform that allows you to run and scale AI applications easily, using cloud resources to bypass local hardware limitations. ☁️
 
-### Benefits of Using Lightning AI 🌟
+### Benefits of Using Lightning AI
 
 - **Access to GPUs**: Leverage high-performance GPUs in the cloud to accelerate your application, especially useful for NLP tasks that require substantial computational power. 
 - **Module Compatibility**: Ensure that all necessary dependencies and modules are compatible and up to date, reducing the complexity of local environment setup. 
 - **Scalability**: Easily scale your application to handle larger workloads without worrying about local resource constraints. 
 - **Ease of Deployment**: Deploy your application with minimal configuration, making it accessible from anywhere. 
 
-### How to Deploy on Lightning AI 🚀
+### How to Deploy on Lightning AI
 
 1. **Sign Up for Lightning AI**: Create an account at [Lightning AI](https://lightning.ai/). 
 2. **Create a New Project**: Start a new project and link it to your GitHub repository containing the PYBOT application. 
@@ -140,6 +140,6 @@ If you do not have the necessary local resources, such as powerful GPUs or are c
 
 Using Lightning AI is particularly advantageous if you're working with limited local resources but still want to leverage the full capabilities of the PYBOT application. 💪
 
-## License 📜
+## License
 
 This project is licensed under the MIT License. 📄
