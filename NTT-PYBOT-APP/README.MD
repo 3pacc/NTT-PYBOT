@@ -1,4 +1,4 @@
-# PYBOT Chatbot Documentation
+# PYBOT Documentation
 
 ## Introduction
 
