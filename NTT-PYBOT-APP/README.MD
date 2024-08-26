@@ -1,14 +1,8 @@
-# PYBOT Chatbot Documentation 🤖📚
+# PYBOT Documentation 🤖
 
 ## Introduction
 
 Welcome to **PYBOT**! 🎉 An advanced Python-based conversational AI chatbot designed to assist you in navigating and extracting insights from PDF documents using cutting-edge Natural Language Processing (NLP) techniques. This application is built with Streamlit and leverages the power of **Retrieval-Augmented Generation (RAG)** to provide accurate, contextually relevant, and insightful answers to your queries.
-
-**PYBOT** is pre-trained on a vast corpus of Python development documents, making it an invaluable tool for developers. 🐍 Whether you're dealing with basic concepts, tackling advanced topics, troubleshooting complex issues, or seeking best practices, PYBOT is equipped to handle a wide range of Python programming challenges. It offers quick, precise, and reliable responses, tailored to meet the needs of both beginners and seasoned developers.
-
-Beyond its programming expertise, PYBOT excels in processing and analyzing PDF documents. 📄 By breaking down large texts into manageable chunks and using vectorized search capabilities powered by FAISS, PYBOT can retrieve and deliver the most relevant information with speed and efficiency. Its conversational interface allows you to engage in dynamic Q&A sessions, maintaining the context of multi-turn interactions to ensure coherent and meaningful exchanges.
-
-Whether you’re looking to deepen your Python knowledge, solve coding problems, or extract valuable insights from documents, PYBOT is your go-to AI assistant, combining the strengths of both a code-savvy tutor and a document analysis expert. 💻📊
 
 ## Table of Contents 📑
 
@@ -20,7 +14,6 @@ Whether you’re looking to deepen your Python knowledge, solve coding problems,
 - [Technical Overview](#technical-overview)
 - [Concept of RAG](#concept-of-rag)
 - [Customization](#customization)
-- [Contributing](#contributing)
 - [Lightning AI Integration](#lightning-ai-integration)
 - [License](#license)
 
@@ -126,16 +119,6 @@ This hybrid approach ensures that the chatbot can provide precise, well-informed
 - **Switching NLP Models**: Modify the `get_conversation_chain` function to use different Hugging Face models as per your requirements. 🔄
 - **Text Chunking Parameters**: Adjust the `chunk_size` and `chunk_overlap` parameters in the `get_text_chunks` function to fine-tune the text segmentation. 📏
 - **UI Customization**: Update the `htmlTemplates.py` file to change the look and feel of the chatbot interface. 🎨
-
-## Contributing 🤝
-
-We welcome contributions from the community! 🌍 Please follow these steps:
-
-1. Fork the repository. 🍴
-2. Create a new branch (`git checkout -b feature/YourFeature`). 🌿
-3. Commit your changes (`git commit -m 'Add some feature'`). 💬
-4. Push to the branch (`git push origin feature/YourFeature`). 🚀
-5. Open a pull request. 🔃
 
 ## Lightning AI Integration ⚡
 
