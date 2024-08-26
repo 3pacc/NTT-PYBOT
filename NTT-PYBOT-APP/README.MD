@@ -15,6 +15,7 @@ Welcome to **PYBOT**, an advanced chatbot application designed to assist you in 
 - [Concept of RAG](#concept-of-rag)
 - [Customization](#customization)
 - [Contributing](#contributing)
+- [Lightning AI Integration](#lightning-ai-integration)
 - [License](#license)
 
 ## Features
@@ -38,8 +39,8 @@ Before running this application, ensure that you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/pybot-chatbot.git
-   cd pybot-chatbot
+   git clone https://github.com/3pacc/NTT-PYBOT.git
+   cd NTT-PYBOT
    ```
 
 2. **Set Up a Virtual Environment (optional but recommended)**:
@@ -67,7 +68,7 @@ Before running this application, ensure that you have the following installed:
 
 1. **Run the Application**:
    ```bash
-   streamlit run main.py
+   streamlit run app.py
    ```
 
 2. **Interact with PYBOT**:
@@ -80,7 +81,7 @@ Before running this application, ensure that you have the following installed:
 pybot-chatbot/
 ├── ressources/           # Folder containing PDF files to be processed
 ├── img/                  # Image assets for the Streamlit interface
-├── main.py               # Main application code
+├── app.py               # Main application code
 ├── requirements.txt      # Python dependencies
 ├── .env.example          # Example environment variables
 ├── README.md             # Project documentation
@@ -128,6 +129,26 @@ We welcome contributions from the community! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a pull request.
+
+## Lightning AI Integration
+
+If you do not have the necessary local resources, such as powerful GPUs or are concerned about the compatibility of various modules, you can deploy this application on **Lightning AI**. Lightning AI provides a robust platform that allows you to run and scale AI applications easily, using cloud resources to bypass local hardware limitations.
+
+### Benefits of Using Lightning AI
+
+- **Access to GPUs**: Leverage high-performance GPUs in the cloud to accelerate your application, especially useful for NLP tasks that require substantial computational power.
+- **Module Compatibility**: Ensure that all necessary dependencies and modules are compatible and up to date, reducing the complexity of local environment setup.
+- **Scalability**: Easily scale your application to handle larger workloads without worrying about local resource constraints.
+- **Ease of Deployment**: Deploy your application with minimal configuration, making it accessible from anywhere.
+
+### How to Deploy on Lightning AI
+
+1. **Sign Up for Lightning AI**: Create an account at [Lightning AI](https://lightning.ai/).
+2. **Create a New Project**: Start a new project and link it to your GitHub repository containing the PYBOT application.
+3. **Configure Your Environment**: Set up the necessary environment variables and dependencies as you would locally. Lightning AI ensures that the modules are compatible and optimized for performance.
+4. **Deploy**: Launch the application on Lightning AI and access it via the provided URL.
+
+Using Lightning AI is particularly advantageous if you're working with limited local resources but still want to leverage the full capabilities of the PYBOT application.
 
 ## License
 
