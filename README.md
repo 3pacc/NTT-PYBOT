@@ -1,4 +1,4 @@
-# NTTRAG-CHATBOT - RAG Pipeline Documentation
+# NTT-PYBOT - RAG Pipeline Documentation
 ![Texte alternatif](ressources/img/workflow.png) 
 
 ## Overview
