@@ -41,9 +41,9 @@ def get_vectorstore(text_chunks):
 
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI()
-    # llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta", model_kwargs={"temperature":0.5, "max_length":512, "return_full_text":False}) # aternative model for small text generation but doesn't match our model  
-    #llm = HuggingFaceHub(repo_id="google/gemma-7b-it", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False}) # A large model that needs robust GPU's : >=24GB
-    #llm = HuggingFaceHub(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False}) # aternative model for small text generation but doesn't match our model  
+    #llm = HuggingFaceHub(repo_id="HuggingFaceH4/zephyr-7b-beta", model_kwargs={"temperature":0.5, "max_length":512, "return_full_text":False})
+    #llm = HuggingFaceHub(repo_id="google/gemma-7b-it", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False})
+    #llm = HuggingFaceHub(repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1", model_kwargs={"temperature":0.7, "max_length":1024, "return_full_text":False})
 
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
@@ -82,7 +82,7 @@ def display_chat_history():
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Chat with Sesame", page_icon=":books:")
+    st.set_page_config(page_title="Chat with PYBOT", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -99,17 +99,16 @@ def main():
             st.session_state.conversation = get_conversation_chain(vectorstore)
             st.success("Files processed and conversation initialized successfully.")
 
-    st.header("Chat with NTTBOT 🤖")
-
+    st.header("Chat with PYBOT 🤖")
     # Input field at the top
     st.text_input("Ask a question about your documents:", value=st.session_state.user_question, key="user_question", on_change=handle_userinput)
 
     # Display chat messages
     display_chat_history()
+    st.logo("img/pybot.png")
 
     with st.sidebar:
-        #st.image("img/ntt-data.png", caption="Chatbot trained on Python development")
-        #st.logo("img/ntt-data.png")
+        st.image("img/ntt-data.png", caption="Chatbot trained on Python development for NTT DATA")
         
         
         menu_options = [
@@ -129,7 +128,7 @@ def main():
 
         if selected_option == "Introduction":
             st.subheader("Introduction 🗣️")
-            st.write("Welcome to the **NTT-CHATBOT**! I am here to assist you with everything related to **Python development**. Whether you're just starting out or looking to refine your skills, I'm here to help!")
+            st.write("Welcome to the **PYBOT**! I am here to assist you with everything related to **Python development**. Whether you're just starting out or looking to refine your skills, I'm here to help!")
 
         elif selected_option == "About Us":
             st.subheader("About Us 🌟")
@@ -163,16 +162,16 @@ def main():
             st.subheader("Location 🌍")
             st.write("Visit us at our office for in-person assistance or any other inquiries.")
             st.image("img/location.png")
-            st.write("🔗 **Website:** https://www.everis.com/morocco/fr/home-spain-morocco")
             st.write("📍 **Address:** Parc Tétouanshore - SHORE 3. Route de Martil, Cabo Negro 93150")
             st.write("🕒 **Opening Hours:** **Monday** - **Friday**: **8:00 AM - 6:00 PM**")
-            st.write("📞 **Phone:** **+212531062990**")
+            st.write("🔗 **Website:** https://www.everis.com/morocco/fr/home-spain-morocco")
+            st.write("📞 **Phone:** **(+212)531062990**")
 
 
         elif selected_option == "Team Support":
             st.subheader("Contact Support 📞")
             st.write("Need further assistance? Reach out to our support team for help with any issues or questions you may have. We're here to support you! Feel free to reach out to our team.       \n  "      
-                 "📧 **Email:** antribak@emeal.nttdata.com    \n zdoukkali@emeal.nttdata.com    \n   "
+                 "   📧 **Email:** antribak@emeal.nttdata.com    \n zdoukkali@emeal.nttdata.com    \n   "
                  "🐦 **Follow us on LinkedIn:** [Tribak Anas](https://www.linkedin.com/in/anas-tribak-331470242/)     |   [Zineb Doukkali](https://www.linkedin.com/in/anas-tribak-331470242/)    \n"
                  "🔗 **GitHub:** [3pacc](https://github.com/3pacc) | [Zineb33doukkali](https://github.com/Zineb33doukkali)")
         
