@@ -1,102 +1,134 @@
-# NTTRAG-CHATBOT-APP
+# PYBOT Chatbot Documentation
 
-## Description
+## Introduction
 
-NTTBOT est une application interactive développée en Python utilisant Streamlit, conçue pour offrir une assistance sur le développement Python à travers un chatbot sophistiqué. L'application utilise l'approche RAG (Retrieval-Augmented Generation) pour fournir des réponses précises et contextuelles en se basant sur les documents fournis par l'utilisateur.
+Welcome to **PYBOT**, an advanced chatbot application designed to assist you in navigating and extracting insights from PDF documents using state-of-the-art Natural Language Processing (NLP) techniques. This application is built with Streamlit and leverages the power of **Retrieval-Augmented Generation (RAG)** to provide accurate and contextually relevant answers to your questions.
 
-### Technologies et Méthodes Utilisées
+## Table of Contents
 
-1. **Streamlit** : 
-   - Utilisé pour construire l'interface utilisateur de manière interactive et réactive. Streamlit permet une création rapide de tableaux de bord et d'applications web en Python avec une intégration facile des widgets interactifs comme les champs de texte et les menus déroulants.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Technical Overview](#technical-overview)
+- [Concept of RAG](#concept-of-rag)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-2. **RAG (Retrieval-Augmented Generation)** :
-   - NTTBOT s'appuie sur l'approche RAG pour générer des réponses informées. Cette technique combine la génération de texte par modèle de langage (LLM) avec la récupération d'informations pertinentes à partir d'une base de données de documents. Cela permet de fournir des réponses plus précises et contextualisées par rapport au simple usage d'un modèle de langage.
+## Features
 
-3. **OpenAI API et ChatOpenAI** :
-   - Initialement, le modèle OpenAI est utilisé pour générer des embeddings et traiter les requêtes des utilisateurs. Cependant, le code est configuré pour basculer entre les modèles OpenAI et Hugging Face selon les besoins, en permettant une flexibilité dans le choix des modèles de langage.
+- **PDF Processing**: Seamlessly extract and analyze text from PDF documents.
+- **Text Chunking**: Break down large texts into manageable chunks for efficient processing.
+- **Vectorized Search**: Utilize FAISS for fast and accurate retrieval of text segments.
+- **Conversational Interface**: Engage in a dynamic Q&A session, powered by OpenAI or Hugging Face models.
+- **Memory Management**: Maintains conversation context for coherent multi-turn interactions.
+- **Customizable NLP Models**: Easily switch between different language models for varied use cases.
 
-4. **dotenv** :
-   - Utilisé pour charger les variables d'environnement à partir du fichier `.env`. Cela permet de garder les configurations sensibles (comme les clés API) sécurisées et séparées du code source.
+## Prerequisites
 
-5. **PyPDF2** :
-   - Une bibliothèque Python permettant de lire et d'extraire du texte à partir de fichiers PDF. Dans NTTBOT, PyPDF2 est utilisé pour extraire le contenu textuel des documents PDF fournis, afin de les analyser et les utiliser pour la génération de réponses.
+Before running this application, ensure that you have the following installed:
 
-6. **LangChain** :
-   - Cette application fait appel à plusieurs modules de LangChain, une bibliothèque conçue pour faciliter la création de chaînes de traitement de texte avec des modèles de langage :
-     - **CharacterTextSplitter** : Sépare le texte en segments gérables (chunks) pour optimiser le traitement par les modèles de langage.
-     - **OpenAIEmbeddings et HuggingFaceEmbeddings** : Convertissent le texte en vecteurs numériques, permettant leur utilisation dans les modèles de recherche et d'analyse.
-     - **FAISS** : Une bibliothèque permettant la recherche de similarité à grande échelle, utilisée pour stocker et interroger les embeddings textuels.
-     - **ConversationalRetrievalChain** : Crée une chaîne de récupération conversationnelle pour traiter les requêtes des utilisateurs en utilisant un modèle de langage et un historique des conversations.
-
-7. **Hugging Face** :
-   - Pour les embeddings, le modèle "sentence-transformers/all-mpnet-base-v2" est utilisé, offrant une alternative aux modèles OpenAI. Hugging Face est une plateforme ouverte fournissant une multitude de modèles de langage pour diverses applications NLP.
-
-8. **Custom HTML/CSS Templates** :
-   - Le fichier `htmlTemplates.py` contient des modèles HTML et CSS personnalisés pour styliser l'application Streamlit. Cela inclut les templates pour les messages du chatbot (bot_template) et les messages de l'utilisateur (user_template), permettant une interface utilisateur cohérente et visuellement agréable.
-
-9. **Gestion de l'historique des conversations** :
-   - Utilisation de `ConversationBufferMemory` pour stocker l'historique des conversations, permettant au chatbot de conserver le contexte lors des interactions avec les utilisateurs.
-
-Grâce à l'utilisation de l'approche RAG, NTTBOT peut fournir une assistance avancée et contextuelle aux développeurs Python, en s'appuyant sur les documents fournis pour générer des réponses pertinentes et éclairées.
-
-## Contenu du Repository
-
-- **`.env`** : Ce fichier contient les variables d'environnement nécessaires au bon fonctionnement de l'application, telles que les clés API et autres configurations sensibles.
-
-- **`app.py`** : Le fichier principal de l'application Streamlit. Il configure l'interface utilisateur, les options de navigation via la barre latérale, et intègre le chatbot NTTRAG.
-
-- **`htmlTemplates.py`** : Ce fichier contient des templates HTML/CSS utilisés pour styliser les différentes sections de l'application Streamlit, permettant une interface utilisateur personnalisée et responsive.
+- Python 3.7 or higher
+- pip (Python package installer)
+- Virtual environment tools (optional but recommended)
 
 ## Installation
 
-1. Clonez le repository :
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/pybot-chatbot.git
+   cd pybot-chatbot
+   ```
 
-    ```bash
-    git clone <URL_DU_REPOSITORY>
-    cd nttrag-chatbot
-    ```
+2. **Set Up a Virtual Environment (optional but recommended)**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-2. Créez un environnement virtuel et activez-le :
+3. **Install the Required Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ```bash
-    python -m venv env
-    source env/bin/activate  # Pour macOS/Linux
-    env\Scripts\activate  # Pour Windows
-    ```
+4. **Set Up Environment Variables**:
+   - Create a `.env` file in the root directory of the project.
+   - Add your OpenAI API key and any other required environment variables:
+     ```
+     OPENAI_API_KEY=your-openai-api-key
+     ```
 
-3. Installez les dépendances :
+5. **Prepare Your PDF Documents**:
+   - Place your PDF files in the `ressources` folder.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+## Usage
 
-4. Configurez les variables d'environnement :
+1. **Run the Application**:
+   ```bash
+   streamlit run main.py
+   ```
 
-    Assurez-vous que le fichier `.env` contient toutes les variables nécessaires. Vous pouvez ajuster ces valeurs en fonction de votre configuration locale.
+2. **Interact with PYBOT**:
+   - Use the web interface to upload PDF documents and ask questions.
+   - Navigate through different sections using the sidebar.
 
-5. Lancez l'application :
+## File Structure
 
-    ```bash
-    streamlit run app.py
-    ```
+```plaintext
+pybot-chatbot/
+├── ressources/           # Folder containing PDF files to be processed
+├── img/                  # Image assets for the Streamlit interface
+├── main.py               # Main application code
+├── requirements.txt      # Python dependencies
+├── .env.example          # Example environment variables
+├── README.md             # Project documentation
+└── htmlTemplates.py      # HTML/CSS templates for chat UI
+```
 
-## Utilisation
+## Technical Overview
 
-- **Navigation** : Utilisez la barre latérale pour naviguer entre les différentes sections de l'application.
-- **Chatbot** : Interagissez avec le chatbot NTTRAG pour obtenir des réponses basées sur les documents de développement Python.
-- **Personnalisation** : Vous pouvez personnaliser l'interface en modifiant les templates HTML/CSS dans `htmlTemplates.py`.
+### Core Components
 
-## Contribution
+- **Streamlit**: Provides the interactive web interface for the chatbot.
+- **Langchain**: Manages text processing, vector embeddings, and language model interactions.
+- **FAISS**: Enables fast and efficient similarity search on the text chunks.
+- **PyPDF2**: Handles PDF file reading and text extraction.
 
-Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
+### Workflow
 
-1. Forkez le repository.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/ma-fonctionnalité`).
-3. Commitez vos modifications (`git commit -am 'Ajout de ma fonctionnalité'`).
-4. Poussez votre branche (`git push origin feature/ma-fonctionnalité`).
-5. Ouvrez une Pull Request.
+1. **PDF Text Extraction**: Extracts text from PDF files using PyPDF2.
+2. **Text Chunking**: Breaks the text into smaller chunks for better retrieval and processing.
+3. **Vectorization**: Converts chunks into embeddings using Hugging Face models.
+4. **RAG-Based Interaction**: Retrieves relevant text chunks and generates responses using the selected NLP model.
+5. **Conversation Handling**: Maintains context across multiple user queries with memory management.
 
-## Licence
+## Concept of RAG
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+**Retrieval-Augmented Generation (RAG)** combines two powerful NLP techniques:
 
+1. **Retrieval**: Searches for the most relevant documents or text segments related to a query.
+2. **Generation**: Uses language models to generate coherent and contextually accurate responses based on the retrieved information.
+
+This hybrid approach ensures that the chatbot can provide precise, well-informed answers even when handling complex queries.
+
+## Customization
+
+- **Switching NLP Models**: Modify the `get_conversation_chain` function to use different Hugging Face models as per your requirements.
+- **Text Chunking Parameters**: Adjust the `chunk_size` and `chunk_overlap` parameters in the `get_text_chunks` function to fine-tune the text segmentation.
+- **UI Customization**: Update the `htmlTemplates.py` file to change the look and feel of the chatbot interface.
+
+## Contributing
+
+We welcome contributions from the community! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
