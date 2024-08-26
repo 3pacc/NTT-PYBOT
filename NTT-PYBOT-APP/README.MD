@@ -39,8 +39,8 @@ Before running this application, ensure that you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/pybot-chatbot.git
-   cd pybot-chatbot
+   git clone https://github.com/3pacc/NTT-PYBOT.git
+   cd NTT-PYBOT
    ```
 
 2. **Set Up a Virtual Environment (optional but recommended)**:
@@ -68,7 +68,7 @@ Before running this application, ensure that you have the following installed:
 
 1. **Run the Application**:
    ```bash
-   streamlit run main.py
+   streamlit run app.py
    ```
 
 2. **Interact with PYBOT**:
@@ -78,10 +78,10 @@ Before running this application, ensure that you have the following installed:
 ## File Structure
 
 ```plaintext
-pybot-chatbot/
+NTT-PYBOT/
 ├── ressources/           # Folder containing PDF files to be processed 📂
 ├── img/                  # Image assets for the Streamlit interface 🖼️
-├── main.py               # Main application code 📜
+├── app.py                # Main application code 📜
 ├── requirements.txt      # Python dependencies 📝
 ├── .env                  # Example environment variables ⚙️
 ├── README.md             # Project documentation 📄
