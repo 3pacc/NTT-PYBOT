@@ -6,7 +6,7 @@ Welcome to **PYBOT**!  An advanced Python-based conversational AI chatbot design
 
 ## Table of Contents 📑
 
-- [Features](#features)
+- [Features](#features ✨)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
