@@ -1,4 +1,4 @@
-# PYBOT Documentation 🤖
+# PYBOT-APP Documentation 🤖
 
 ## Introduction
 
