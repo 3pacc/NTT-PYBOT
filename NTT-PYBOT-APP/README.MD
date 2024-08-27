@@ -60,6 +60,7 @@ Before running this application, ensure that you have the following installed:
 4. **Set Up Environment Variables**:
    - Create a `.env` file in the root directory of the project.
    - Add your OpenAI API and Hugging Face keys or any other required environment variables:
+
      ```
      OPENAI_API_KEY=your-openai-api-key
      ```
