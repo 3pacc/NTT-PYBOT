@@ -4,7 +4,7 @@
 
 Welcome to **PYBOT**!  An advanced Python-based conversational AI chatbot designed to assist you in navigating and extracting insights from PDF documents using cutting-edge Natural Language Processing (NLP) techniques. This application is built with Streamlit and leverages the power of **Retrieval-Augmented Generation (RAG)** to provide accurate, contextually relevant, and insightful answers to your queries.
 
-![Texte alternatif](ressources/img/appScreenRec.mp4)
+![Texte alternatif](ressources/vid/appScreenRec.mp4)
 
 ## Table of Contents 📑
 
