@@ -59,9 +59,12 @@ Before running this application, ensure that you have the following installed:
 
 4. **Set Up Environment Variables**:
    - Create a `.env` file in the root directory of the project.
-   - Add your OpenAI API key and any other required environment variables:
+   - Add your OpenAI API and Hugging Face keys or any other required environment variables:
      ```
      OPENAI_API_KEY=your-openai-api-key
+     ```
+     ```
+     HUGGINGFACEHUB_API_TOKEN=your-hugging-face-key
      ```
 
 5. **Prepare Your PDF Documents**:
