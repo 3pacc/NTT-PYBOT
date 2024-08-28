@@ -125,6 +125,7 @@ This hybrid approach ensures that the chatbot can provide precise, well-informed
 ## App workflow
 
 This workflow illustrates how a collection of PDF documents can be used to answer questions through a semantic search process. The documents are fragmented into chunks, converted into embeddings, and stored in a vector database. When a question is asked, it is also transformed into an embedding and compared to the stored documents to generate an accurate response using a language model.
+
 ![App workflow media](ressources/img/APP_Workflow.png)
 
 ## Customization
