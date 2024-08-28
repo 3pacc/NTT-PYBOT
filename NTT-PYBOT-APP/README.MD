@@ -124,7 +124,7 @@ This hybrid approach ensures that the chatbot can provide precise, well-informed
 
 ## App workflow
 
-![App workflow media](NTT-PYBOT/NTT-PYBOT-APP/ressources/img/APP-Workflow.Png)
+![App workflow media](ressources/img/APP-Workflow.png)
 
 ## Customization
 
