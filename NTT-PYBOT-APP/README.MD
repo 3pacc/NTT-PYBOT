@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/02ba1f8d-8c80-4a18-8f15-d00b4679b091
 - [File Structure](#file-structure)
 - [Technical Overview](#technical-overview)
 - [Concept of RAG](#concept-of-rag)
-- [App Workflow](#App workflow)
+- [App Workflow](#App Workflow)
 - [Cu!stomization](#customization)
 - [Lightning AI Integration](#lightning-ai-integration)
 - [License](#license)
