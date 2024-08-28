@@ -124,7 +124,7 @@ This hybrid approach ensures that the chatbot can provide precise, well-informed
 
 ## App workflow
 
-![App workflow media](ressources/img/APP-Workflow.png)
+![App workflow media](ressources/img/APP_Workflow.png)
 
 ## Customization
 
