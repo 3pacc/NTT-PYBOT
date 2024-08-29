@@ -69,7 +69,7 @@ To get started with the NTT-PYBOT-SCRATCH, follow these steps:
    ```bash
    git clone https://github.com/yourusername/NTTRAG-PYBOT-SCRATCH.git
 
-### Create a Conda Environment (Optional but Recommended)
+2. **create a Conda Environment** (Optional but Recommended)
 
 Using Anaconda to create a virtual environment is highly recommended for several reasons:
 
@@ -81,4 +81,20 @@ To create and activate a Conda environment, use the following commands:
 ```bash
 conda create -n nttrag-pybot-scratch python=3.8
 conda activate nttrag-pybot-scratch
+
+3. **Install Dependencies**:
+-Install the necessary Python packages by running:
+```bash
+pip install -r requirements.txt
+
+4. **Run the Notebook**:
+- Using Jupyter Notebook or JupyterLab (Recommended with Anaconda):
+If you’re using Anaconda, you can launch Jupyter Notebook directly from the Anaconda Navigator or by running:
+```bash
+jupyter notebook
+
+## Using Lightning AI:
+- Lightning AI is another powerful option for running the notebook. It offers advanced features for scaling, managing AI workloads, and running experiments seamlessly in the cloud or on local machines. To use Lightning AI, follow their setup instructions, and then run the notebook through their platform.
+
+
 
