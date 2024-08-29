@@ -86,12 +86,14 @@ conda activate nttrag-pybot-scratch
 -Install the necessary Python packages by running:
 ```bash
 pip install -r requirements.txt
+```
 
 4. **Run the Notebook**:
 - Using Jupyter Notebook or JupyterLab (Recommended with Anaconda):
 If you’re using Anaconda, you can launch Jupyter Notebook directly from the Anaconda Navigator or by running:
 ```bash
 jupyter notebook
+```
 
 ## Using Lightning AI:
 - Lightning AI is another powerful option for running the notebook. It offers advanced features for scaling, managing AI workloads, and running experiments seamlessly in the cloud or on local machines. To use Lightning AI, follow their setup instructions, and then run the notebook through their platform.
