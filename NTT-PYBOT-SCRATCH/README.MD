@@ -4,8 +4,6 @@
 
 The **NTTRAG-PYBOT-SCRATCH** project is an educational and practical exploration into the development of a chatbot using custom-built NLP pipelines from the ground up. This version of the chatbot is designed to offer a transparent, step-by-step guide to creating a Retrieval-Augmented Generation (RAG) system. Unlike typical implementations that rely heavily on pre-built frameworks, this project manually constructs each component, providing an in-depth understanding of how modern NLP techniques can be implemented and optimized.
 
-![Architecture and Workflow](img/workflow.png)
-
 ### Project Purpose
 
 The primary aim of this project is to demystify the processes involved in building a sophisticated chatbot system by constructing each part of the RAG pipeline manually. This approach offers invaluable insights into the inner workings of NLP applications, serving as both a learning resource and a foundation for further research or custom developments.
@@ -13,6 +11,8 @@ The primary aim of this project is to demystify the processes involved in buildi
 ## Architecture and Workflow
 
 The NTTRAG-PYBOT-SCRATCH system is designed to run on a local GPU, making use of high-performance computing to handle large-scale document processing and information retrieval. The following steps outline the architecture and workflow of the system:
+
+![Architecture and Workflow](img/workflow.png)
 
 ### 1. Document Preprocessing and Embedding Creation
 
