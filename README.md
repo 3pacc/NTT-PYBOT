@@ -2,7 +2,8 @@
 
 ## Overview
 
-The NTTRAG-PYBOT project is a comprehensive exploration into the development of a Python-based chatbot application, fine-tuned to understand and interact with users on Python language learning from A to Z. This project includes two key components:
+The NTTRAG-PYBOT project is designed to bridge the gap between theoretical learning and practical application in the field of Natural Language Processing (NLP) and chatbot development. By creating two distinct applications—one leveraging pre-trained models and frameworks, and the other built from scratch—this project aims to demonstrate the strengths, weaknesses, and practical applications of modern NLP techniques in educational contexts, specifically for teaching Python programming.
+This project includes two key components:
 
 1. **NTT-PYBOT-APP**: A chatbot application built using pre-trained models and popular frameworks like LangChain and FAISS, which are integral to creating a Retrieval-Augmented Generation (RAG) architecture. The application is designed to assist users in learning Python by responding to queries based on a rich repository of Python educational documents.
 
@@ -41,6 +42,7 @@ The workflow of both the pre-trained and scratch versions of the chatbot involve
 - **Demonstrate RAG Architecture**: Showcase how frameworks like LangChain and FAISS can be integrated to create a robust RAG architecture, which improves the chatbot's ability to retrieve relevant information and generate accurate responses.
 
 ### NTT-PYBOT-SCRATCH
+- **Transparency in NLP Processes**: To provide a clear, step-by-step breakdown of the processes involved in building a chatbot from scratch.
 - **Understand Framework Processes**: Develop the chatbot from scratch to provide a detailed understanding of the processes and pipelines involved in frameworks like LangChain and FAISS.
 - **Educate and Illustrate**: Serve as an educational tool that illustrates the underlying mechanisms of RAG architecture by breaking down complex processes into comprehensible steps.
 - **Custom Implementation**: Highlight the flexibility and depth of understanding that comes with building such a system from scratch, allowing for potential customization and optimization that may not be possible with pre-built frameworks.
@@ -62,7 +64,7 @@ The following tables list the Python modules used in both the pre-trained model 
 | `langchain`      | Framework for building applications with LLMs, especially for RAG.               |
 | `PyPDF2`         | Library for working with PDF files, such as reading and extracting text.         |
 
-#### NTTRAG-PYBOT-SCRATCH (`NTT-PYBOT.ipynb`)
+#### NTT-PYBOT-SCRATCH (`NTT-PYBOT.ipynb`)
 
 | Module                  | Description                                                                 |
 |-------------------------|-----------------------------------------------------------------------------|
