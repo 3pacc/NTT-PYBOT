@@ -63,8 +63,16 @@ The following table lists the Python modules used in the NTTRAG-PYBOT-SCRATCH ap
 
 ## How to Run
 
-To get started with the NTTRAG-PYBOT-SCRATCH, follow these steps:
+To get started with the NTT-PYBOT-SCRATCH, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/NTTRAG-PYBOT-SCRATCH.git
+
+### Create a Conda Environment (Optional but Recommended)
+
+Using Anaconda to create a virtual environment is highly recommended for several reasons:
+
+- **Dependency Management**: Anaconda helps you manage dependencies efficiently, ensuring that all required packages are installed correctly without affecting your system-wide Python installation.
+- **Isolated Environment**: By creating a virtual environment, you can run this project in an isolated space, preventing any conflicts with other projects or global packages.
+- **Easy Jupyter Integration**: Anaconda comes with Jupyter Notebook pre-installed, making it easy to launch and work with Jupyter notebooks directly.
