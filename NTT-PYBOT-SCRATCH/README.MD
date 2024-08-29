@@ -81,6 +81,7 @@ To create and activate a Conda environment, use the following commands:
 ```bash
 conda create -n nttrag-pybot-scratch python=3.8
 conda activate nttrag-pybot-scratch
+```
 
 3. **Install Dependencies**:
 -Install the necessary Python packages by running:
