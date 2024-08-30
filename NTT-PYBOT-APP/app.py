@@ -92,7 +92,6 @@ def main():
     if "user_question" not in st.session_state:
         st.session_state.user_question = ""
 
-    # Process files and initialize conversation chain
     if st.session_state.conversation is None:
         with st.spinner("Processing files and initializing..."):
             vectorstore = process_files(PDF_FOLDER_PATH)
