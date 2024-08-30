@@ -1,8 +1,8 @@
-# NTTBOT Security Policy
+# NTT-PYBOT Security Policy
 
 ## Supported Versions
 
-This section outlines which versions of NTTBOT are currently receiving security updates. The project team is committed to providing security support for the following versions:
+This section outlines which versions of NTT-PYBOT are currently receiving security updates. The project team is committed to providing security support for the following versions:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -17,7 +17,7 @@ This section outlines which versions of NTTBOT are currently receiving security 
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within NTTBOT, please report it responsibly by following these steps:
+If you discover a security vulnerability within NTT-PYBOT, please report it responsibly by following these steps:
 
 1. **Contact**: Send an email to our security team at [mailnttbot-1](mailto:tribak.anas0@gmail.com) or [mailnttbot-2](mailto:antribak@emeal.nttdata.com) with the details of the vulnerability.
 
@@ -29,4 +29,4 @@ If you discover a security vulnerability within NTTBOT, please report it respons
 
 5. **Confidentiality**: Your report will be treated with the highest confidentiality. We ask that you do not disclose the vulnerability publicly until a fix is available.
 
-Thank you for helping us keep NTTBOT secure for everyone!
+Thank you for helping us keep NTT-PYBOT secure for everyone!
