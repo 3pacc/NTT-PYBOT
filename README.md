@@ -2,7 +2,7 @@
 
 ## Overview
 
-The NTTRAG-PYBOT project is designed to bridge the gap between theoretical learning and practical application in the field of Natural Language Processing (NLP) and chatbot development. By creating two distinct applications—one leveraging pre-trained models and frameworks, and the other built from scratch—this project aims to demonstrate the strengths, weaknesses, and practical applications of modern NLP techniques in educational contexts, specifically for teaching Python programming.
+The NTTRAG-PYBOT project is designed to bridge the gap between theoretical learning and practical application in the field of Natural Language Processing (NLP) and chatbot development. By creating two distinct applications, one leveraging pre-trained models and frameworks, and the other built from scratch. This project aims to demonstrate the strengths, weaknesses, and practical applications of modern NLP techniques in educational contexts, specifically for teaching Python programming.
 This project includes two key components:
 
 1. **NTT-PYBOT-APP**: A chatbot application built using pre-trained models and popular frameworks like LangChain and FAISS, which are integral to creating a Retrieval-Augmented Generation (RAG) architecture. The application is designed to assist users in learning Python by responding to queries based on a rich repository of Python educational documents.
