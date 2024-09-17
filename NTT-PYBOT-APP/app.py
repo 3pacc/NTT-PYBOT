@@ -170,8 +170,8 @@ def main():
         elif selected_option == "Team Support":
             st.subheader("Contact Support 📞")
             st.write("Need further assistance? Reach out to our support team for help with any issues or questions you may have. We're here to support you! Feel free to reach out to our team.       \n  "      
-                 "   📧 **Email:** antribak@emeal.nttdata.com    \n zdoukkali@emeal.nttdata.com    \n   "
-                 "🐦 **Follow us on LinkedIn:** [Tribak Anas](https://www.linkedin.com/in/anas-tribak-331470242/)     |   [Zineb Doukkali](https://www.linkedin.com/in/anas-tribak-331470242/)    \n"
+                 "   📧 **Email:** tribak.anas0@gmail.com    \n doukkali.zineb.2021.2022@gmail.com    \n   "
+                 "🐦 **Follow us on LinkedIn:** [Tribak Anas](https://www.linkedin.com/in/anas-tribak-331470242/)     |   [Zineb Doukkali](https://www.linkedin.com/in/zineb-doukkali-5147b7293/)    \n"
                  "🔗 **GitHub:** [3pacc](https://github.com/3pacc) | [Zineb33doukkali](https://github.com/Zineb33doukkali)")
         
         #st.feedback("thumbs")
